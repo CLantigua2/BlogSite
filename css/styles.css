@@ -1,0 +1,390 @@
+body {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    margin: auto;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/*forces container objects into the middle*/
+
+
+/* COMMON CLASSES */
+
+.primary-text {
+    color: #56a79a;
+}
+
+.primary-background {
+    background: #56a79a;
+}
+
+
+/* HEADER */
+
+#main-header {
+    border-bottom: 1px solid #56a79a;
+    color: #fff;
+    background-color: #000;
+    background: cover;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    text-transform: uppercase;
+}
+
+#navbar li {
+    display: inline;
+    padding-right: 20px;
+    list-style: none;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#navbar li.current a,
+#navbar a:hover {
+    color: #56a79a;
+    border-bottom: 3px solid #56a79a;
+    transition: 0.4s ease-in-out;
+    padding-bottom: 3px;
+}
+
+
+/* SHOWCASE */
+
+#meImg {
+    border: 5px solid #56a79a;
+    border-radius: 50%;
+}
+
+#showcase {
+    background: url('../img/terrah-holly-241981-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+    border-bottom: 5px solid #56a79a;
+    margin-bottom: 30px;
+}
+
+#showcase .row {
+    height: 600px;
+}
+
+#showcase h1 {
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#showcase p {
+    color: #ccc;
+    margin: 0px;
+}
+
+#showcase .showcase-content {
+    background: #000;
+    width: 100%;
+    color: #fff;
+    border-radius: 50px;
+    padding: 40px;
+    opacity: 0.9;
+}
+
+
+/* FEATURES */
+
+#features h2 {
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#features p {
+    color: #888;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#features .fa {
+    font-size: 60px;
+    color: #56a79a;
+}
+
+
+/* INFO*/
+
+#natImg {
+    margin: 4px;
+    border: 5px solid #56a79a;
+    border-radius: 100%;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+#info {
+    background: #333 url('../img/michael-mroczek-440382-unsplash.jpg') no-repeat;
+    background-size: cover;
+    width: cover;
+    border-top: 5px solid #56a79a;
+    color: #fff;
+    padding-top: 2em;
+}
+
+#info h2 {
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#info li {
+    line-height: 2em;
+    font-size: 20px;
+}
+
+
+/*REFERENCES*/
+
+#references {
+    background: #fff;
+    color: #000;
+    border-top: 5px solid #56a79a;
+}
+
+
+/* COMPANY */
+
+#company {
+    border-top: 5px solid #56a79a;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#company h4 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#company ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2em;
+}
+
+#company input[type="text"] {
+    padding: 7px;
+}
+
+#company button {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+}
+
+
+/* FOOTER */
+
+#main-footer {
+    background: #000;
+    background-size: cover;
+    color: #fff;
+}
+
+
+/* PAGE */
+
+#page {
+    margin-bottom: 40px;
+    background-image: url("/img/jazmin-quaynor-35847-unsplash.jpg");
+    background-size: cover;
+    position: sticky;
+}
+
+
+/* Blog */
+
+.blogHeading {
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #444;
+    margin: 0 auto;
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.services ul {
+    list-style: none;
+    padding: 10px;
+    background: #333;
+    border: 2px solid #56a79a;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 25px;
+}
+
+
+/* CONTACT */
+
+.contact form {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.contact form input[type="text"] {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.contact form textarea {
+    width: 50%;
+    height: 100px;
+}
+
+.contact form button {
+    width: 50%;
+    padding: 10px 0;
+    border: 0;
+    background: #222;
+    color: #fff;
+}
+
+.contact form label {
+    text-transform: uppercase;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width:800px) {
+    #showcase h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:500px) {
+    #showcase .showcase-content {
+        padding: 40px 10px;
+    }
+}
+
+
+/* READ MORE BUTTON */
+
+.show-more {
+    text-decoration-style: none;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    width: 98px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px;
+    text-align: center;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 25px 25px 25px 25px;
+    opacity: 1;
+}
+
+.content p {
+    width: 700px;
+    background: #fff;
+    padding: 20px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #444;
+    margin: 0 auto;
+    max-height: 70px;
+    overflow: hidden;
+    /* Set transitions up. */
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+.content.open p {
+    width: 700px;
+    background: #fff;
+    padding: 20px;
+    padding-top: 10;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #444;
+    margin: 0 auto;
+    max-height: 1000px;
+    overflow: hidden;
+    /* Set transitions up.*/
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+
+/*TOP BUTTON*/
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #fff;
+    /* Set a background color */
+    color: #000;
+    /* Text color */
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 30px;
+    /* Increase font size */
+    height: 50px;
+}
+
+#myBtn:hover {
+    background-color: #000;
+    color: #fff;
+    /* Add a dark-grey background on hover */
+}
