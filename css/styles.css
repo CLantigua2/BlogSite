@@ -214,6 +214,13 @@ li {
     color: #fff;
 }
 
+#main-footer p {
+    position: relative;
+    padding-top: 2px;
+    margin-top: 4px;
+    float: right;
+}
+
 
 /* PAGE */
 
