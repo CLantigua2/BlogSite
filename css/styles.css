@@ -327,8 +327,9 @@ li {
     background: #fff;
     padding: 20px;
     padding-top: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    sans-serif;
+    font-size: 20px;
     color: #444;
     margin: 0 auto;
     max-height: 70px;
@@ -344,11 +345,12 @@ li {
     background: #fff;
     padding: 20px;
     padding-top: 10;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    sans-serif;
+    font-size: 20px;
     color: #444;
     margin: 0 auto;
-    max-height: 1000px;
+    max-height: 2000px;
     overflow: hidden;
     /* Set transitions up.*/
     -webkit-transition: max-height 0.7s;
@@ -394,4 +396,112 @@ li {
     background-color: #000;
     color: #fff;
     /* Add a dark-grey background on hover */
+}
+
+
+/* Blog ONLY /*
+
+/*Apr 2, 2018*/
+
+.climbing {
+    position: relative;
+    width: 100%;
+}
+
+.post {
+    position: relative;
+    float: right;
+    left: 20px;
+    padding-right: 0;
+    bottom: 300px;
+    background-color: rgba(2, 2, 2, 0.80);
+    width: 460px;
+    color: #fff;
+    border: 0;
+}
+
+.post h2 {
+    position: inherit;
+    float: right;
+    padding-right: 10px;
+    bottom: 0px;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 36px;
+    margin: 16px;
+    padding-bottom: 8px;
+}
+
+.line {
+    background-color: #56a79a;
+    height: 2px;
+    width: 100%;
+    margin: 100px 0 100px 0;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width:800px) {
+    #showcase h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:500px) {
+    #showcase .showcase-content {
+        padding: 40px 10px;
+    }
+}
+
+@media(max-width:800px) {
+    .post {
+        position: relative;
+        float: right;
+        padding-right: 0;
+        bottom: 200px;
+        background-color: rgba(2, 2, 2, 0.80);
+        width: 460px;
+        color: #fff;
+        border: 0;
+    }
+}
+
+@media(max-width:800px) {
+    .post h2 {
+        position: relative;
+        float: right;
+        left: 50px;
+        padding-right: 0;
+        bottom: 0;
+        width: 460px;
+        color: #fff;
+        font-size: 36px;
+    }
+}
+
+@media(max-width:500px) {
+    .post {
+        position: relative;
+        float: right;
+        padding-right: 0;
+        bottom: 200px;
+        background-color: rgba(2, 2, 2, 0.80);
+        width: 460px;
+        color: #fff;
+        border: 0;
+    }
+}
+
+@media(max-width:500px) {
+    .post h2 {
+        position: relative;
+        float: right;
+        left: 130px;
+        padding-right: 0;
+        bottom: 0;
+        width: 460px;
+        color: #fff;
+        font-size: 36px;
+    }
 }
