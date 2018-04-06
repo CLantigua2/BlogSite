@@ -235,7 +235,6 @@ li {
 /* Blog */
 
 .blogHeading {
-    width: 600px;
     background: #fff;
     padding: 20px;
     padding-top: 10px;
@@ -454,10 +453,15 @@ li {
     }
 }
 
-@media(max-width:725px) {
+@media(max-width:630px) {
     .post,
     .post h2 {
         position: relative;
         float: left;
+        width: 100%;
+        left: 0;
+        padding-right: 0;
+        bottom: 8px;
+        background-color: #000;
     }
 }
