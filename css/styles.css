@@ -323,12 +323,11 @@ li {
 }
 
 .content p {
-    width: 700px;
+    max-width: 700px;
     background: #fff;
     padding: 20px;
     padding-top: 10px;
     font-family: 'Montserrat', sans-serif;
-    sans-serif;
     font-size: 20px;
     color: #444;
     margin: 0 auto;
@@ -346,7 +345,6 @@ li {
     padding: 20px;
     padding-top: 10;
     font-family: 'Montserrat', sans-serif;
-    sans-serif;
     font-size: 20px;
     color: #444;
     margin: 0 auto;
@@ -418,6 +416,7 @@ li {
     width: 460px;
     color: #fff;
     border: 0;
+    overflow: hidden;
 }
 
 .post h2 {
@@ -430,6 +429,7 @@ li {
     font-size: 36px;
     margin: 16px;
     padding-bottom: 8px;
+    overflow: hidden;
 }
 
 .line {
@@ -454,54 +454,10 @@ li {
     }
 }
 
-@media(max-width:800px) {
-    .post {
-        position: relative;
-        float: right;
-        padding-right: 0;
-        bottom: 200px;
-        background-color: rgba(2, 2, 2, 0.80);
-        width: 460px;
-        color: #fff;
-        border: 0;
-    }
-}
-
-@media(max-width:800px) {
+@media(max-width:725px) {
+    .post,
     .post h2 {
         position: relative;
-        float: right;
-        left: 50px;
-        padding-right: 0;
-        bottom: 0;
-        width: 460px;
-        color: #fff;
-        font-size: 36px;
-    }
-}
-
-@media(max-width:500px) {
-    .post {
-        position: relative;
-        float: right;
-        padding-right: 0;
-        bottom: 200px;
-        background-color: rgba(2, 2, 2, 0.80);
-        width: 460px;
-        color: #fff;
-        border: 0;
-    }
-}
-
-@media(max-width:500px) {
-    .post h2 {
-        position: relative;
-        float: right;
-        left: 130px;
-        padding-right: 0;
-        bottom: 0;
-        width: 460px;
-        color: #fff;
-        font-size: 36px;
+        float: left;
     }
 }
