@@ -496,13 +496,13 @@ img.meImg2 {
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:630px) {
     img.meImg1 {
         display: none;
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:630px) {
     img.meImg2 {
         display: block;
         max-width: 767px;
