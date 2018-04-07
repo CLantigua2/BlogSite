@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open-sans', sans-serif;
     font-size: 17px;
@@ -26,11 +30,15 @@ li {
 /* COMMON CLASSES */
 
 .primary-text {
-    color: #56a79a;
+    color: skyblue;
+}
+
+.secondary-text {
+    color: rgb(10, 145, 255);
 }
 
 .primary-background {
-    background: #56a79a;
+    background: rgb(10, 145, 255);
 }
 
 
@@ -63,8 +71,8 @@ li {
 
 #navbar li.current a,
 #navbar a:hover {
-    color: #56a79a;
-    border-bottom: 3px solid #56a79a;
+    color: rgb(10, 145, 255);
+    border-bottom: 3px solid #0b97f5;
     transition: 0.4s ease-in-out;
     padding-bottom: 3px;
 }
@@ -72,15 +80,22 @@ li {
 
 /* SHOWCASE */
 
-#meImg {
-    border: 5px solid #56a79a;
+img.meImg1 {
+    border: 5px solid rgb(2, 80, 145);
+    ;
     border-radius: 50%;
+    display: block;
+}
+
+img.meImg2 {
+    display: none;
 }
 
 #showcase {
     background: url('../img/terrah-holly-241981-unsplash.jpg') no-repeat center center;
     background-size: cover;
-    border-bottom: 5px solid #56a79a;
+    border-bottom: 5px solid rgb(2, 80, 145);
+    ;
     margin-bottom: 30px;
 }
 
@@ -131,19 +146,26 @@ li {
 
 /* INFO*/
 
-#natImg {
+.natImg1 {
     margin: 4px;
-    border: 5px solid #56a79a;
+    border: 5px solid rgb(2, 80, 145);
+    ;
     border-radius: 100%;
     width: 75%;
     margin-bottom: 20px;
+    display: block;
+}
+
+.natImg2 {
+    display: none;
 }
 
 #info {
     background: #333 url('../img/michael-mroczek-440382-unsplash.jpg') no-repeat;
     background-size: cover;
     width: cover;
-    border-top: 5px solid #56a79a;
+    border-top: 5px solid rgb(2, 80, 145);
+    ;
     color: #fff;
     padding-top: 2em;
 }
@@ -170,14 +192,16 @@ li {
 #references {
     background: #fff;
     color: #000;
-    border-top: 5px solid #56a79a;
+    border-top: 5px solid rgb(2, 80, 145);
+    ;
 }
 
 
 /* COMPANY */
 
 #company {
-    border-top: 5px solid #56a79a;
+    border-top: 5px solid rgb(2, 80, 145);
+    ;
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -250,7 +274,8 @@ li {
     list-style: none;
     padding: 10px;
     background: #333;
-    border: 2px solid #56a79a;
+    border: 2px solid rgb(2, 80, 145);
+    ;
     border-radius: 15px 15px 15px 15px;
     margin-bottom: 25px;
 }
@@ -288,21 +313,6 @@ li {
 }
 
 
-/* MEDIA QUERIES */
-
-@media(max-width:800px) {
-    #showcase h1 {
-        font-size: 30px;
-    }
-}
-
-@media(max-width:500px) {
-    #showcase .showcase-content {
-        padding: 40px 10px;
-    }
-}
-
-
 /* READ MORE BUTTON */
 
 .show-more {
@@ -330,7 +340,7 @@ li {
     font-size: 20px;
     color: #444;
     margin: 0 auto;
-    max-height: 70px;
+    max-height: 30px;
     overflow: hidden;
     /* Set transitions up. */
     -webkit-transition: max-height 0.7s;
@@ -339,7 +349,7 @@ li {
 }
 
 .content.open p {
-    width: 700px;
+    max-width: 700px;
     background: #fff;
     padding: 20px;
     padding-top: 10;
@@ -432,10 +442,23 @@ li {
 }
 
 .line {
-    background-color: #56a79a;
+    background-color: rgb(2, 80, 145);
+    ;
     height: 2px;
     width: 100%;
     margin: 100px 0 100px 0;
+}
+
+
+/* Footer items */
+
+.fa.icons {
+    font-size: 40px;
+    color: white;
+    padding: 6px;
+    padding-top: 24px;
+    margin: 0px;
+    ;
 }
 
 
@@ -463,5 +486,73 @@ li {
         padding-right: 0;
         bottom: 8px;
         background-color: #000;
+    }
+}
+
+@media(max-width:630px) {
+    .content p,
+    .content.open p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:767px) {
+    img.meImg1 {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    img.meImg2 {
+        display: block;
+        max-width: 767px;
+        padding-bottom: 40px;
+    }
+}
+
+@media(max-width:767px) {
+    .natImg1 {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .natImg2 {
+        display: block;
+        max-width: 767px;
+        padding-bottom: 40px;
+    }
+}
+
+@media(max-width:767px) {
+    #showcase {
+        background: url('../img/myPC.PNG') no-repeat center center;
+        background-size: cover;
+        border-bottom: 5px solid rgb(2, 80, 145);
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .fa.icons {
+        margin-right: 20px;
+        font-size: 80px;
+        ;
+    }
+}
+
+@media(max-width:553px) {
+    .fa.icons {
+        margin-right: 0;
+        font-size: 80px;
+        ;
+    }
+}
+
+@media(max-width:453px) {
+    .fa.icons {
+        margin-right: 0;
+        font-size: 60px;
+        ;
     }
 }
