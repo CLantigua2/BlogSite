@@ -1,5 +1,13 @@
-html {
+/* COMMON CLASSES */
+
+* {
     box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 body {
@@ -8,6 +16,7 @@ body {
     line-height: 1.5em;
     margin: 0;
     padding: 0;
+    background: #ddd;
 }
 
 img {
@@ -23,18 +32,16 @@ li {
     list-style-type: none;
 }
 
-
-/*forces container objects into the middle*/
-
-
-/* COMMON CLASSES */
-
 .primary-text {
     color: skyblue;
 }
 
 .secondary-text {
     color: rgb(10, 145, 255);
+}
+
+.third-text {
+    color: rgb(75, 0, 130)
 }
 
 .primary-background {
@@ -45,10 +52,22 @@ li {
 /* HEADER */
 
 #main-header {
+    position: absolute;
     border-bottom: 1px solid #56a79a;
     color: #fff;
     background-color: #000;
     background: cover;
+    width: 100%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+}
+
+#main-header2 {
+    border-bottom: 1px solid #56a79a;
+    color: #fff;
+    background-color: #000;
+    background: cover;
+    width: 100%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
 }
 
 
@@ -81,7 +100,7 @@ li {
 /* SHOWCASE */
 
 img.meImg1 {
-    border: 5px solid rgb(2, 80, 145);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
     ;
     border-radius: 50%;
     display: block;
@@ -91,13 +110,24 @@ img.meImg2 {
     display: none;
 }
 
-#showcase {
-    background: url('../img/terrah-holly-241981-unsplash.jpg') no-repeat center center;
+.home-hero {
+    background: url('../img/terrah-holly-241981-unsplash.PNG') no-repeat;
+    box-sizing: border-box;
     background-size: cover;
-    border-bottom: 5px solid rgb(2, 80, 145);
-    ;
-    margin-bottom: 30px;
+    background-position: center;
+    padding: 0;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
 }
+
+
+/* Parallax Img Effect */
+
+.parallax-bg {
+    transition: initial;
+}
+
+
+/* End of parallax */
 
 #showcase .row {
     height: 600px;
@@ -126,6 +156,10 @@ img.meImg2 {
 
 /* FEATURES */
 
+#features {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
+}
+
 #features h2 {
     font-size: 35px;
     margin: 0;
@@ -148,8 +182,7 @@ img.meImg2 {
 
 .natImg1 {
     margin: 4px;
-    border: 5px solid rgb(2, 80, 145);
-    ;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
     border-radius: 100%;
     width: 75%;
     margin-bottom: 20px;
@@ -161,11 +194,11 @@ img.meImg2 {
 }
 
 #info {
-    background: #333 url('../img/michael-mroczek-440382-unsplash.jpg') no-repeat;
+    background: #333 url('../img/michael-mroczek-440382-unsplash.PNG') no-repeat;
     background-size: cover;
     width: cover;
-    border-top: 5px solid rgb(2, 80, 145);
-    ;
+    border: 3;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
     color: #fff;
     padding-top: 2em;
 }
@@ -190,10 +223,18 @@ img.meImg2 {
 /*REFERENCES*/
 
 #references {
-    background: #fff;
+    background: #ddd;
     color: #000;
-    border-top: 5px solid rgb(2, 80, 145);
-    ;
+}
+
+#references h2 {
+    text-align: center;
+}
+
+.bg-color {
+    border: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 
@@ -243,6 +284,7 @@ img.meImg2 {
     padding-top: 2px;
     margin-top: 4px;
     float: right;
+    font-size: 12px;
 }
 
 
@@ -259,7 +301,7 @@ img.meImg2 {
 /* Blog */
 
 .blogHeading {
-    background: #fff;
+    background: #ddd;
     padding: 20px;
     padding-top: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -278,6 +320,16 @@ img.meImg2 {
     ;
     border-radius: 15px 15px 15px 15px;
     margin-bottom: 25px;
+}
+
+
+/* Divider Section */
+
+#separator {
+    background: url("../img/photo-1510915228340-29c85a43dcfe.PNG") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
 }
 
 
@@ -333,7 +385,7 @@ img.meImg2 {
 
 .content p {
     max-width: 700px;
-    background: #fff;
+    background: #ddd;
     padding: 20px;
     padding-top: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -350,14 +402,14 @@ img.meImg2 {
 
 .content.open p {
     max-width: 700px;
-    background: #fff;
+    background: #ddd;
     padding: 20px;
     padding-top: 10;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #444;
     margin: 0 auto;
-    max-height: 2000px;
+    max-height: 2200px;
     overflow: hidden;
     /* Set transitions up.*/
     -webkit-transition: max-height 0.7s;
@@ -397,12 +449,14 @@ img.meImg2 {
     font-size: 30px;
     /* Increase font size */
     height: 50px;
+    opacity: 0.5;
 }
 
 #myBtn:hover {
     background-color: #000;
     color: #fff;
     /* Add a dark-grey background on hover */
+    opacity: 0.5;
 }
 
 
@@ -533,26 +587,40 @@ img.meImg2 {
     }
 }
 
+
+/* FOOTER ICON QUERIES */
+
+@media(min-width:768px) {
+    .fa.icons {
+        margin-right: 0;
+        padding-right: 20px;
+        font-size: 60px;
+        ;
+    }
+}
+
 @media(max-width:767px) {
     .fa.icons {
         margin-right: 20px;
+        margin-left: 20px;
         font-size: 80px;
         ;
     }
 }
 
-@media(max-width:553px) {
+@media(max-width:633px) {
     .fa.icons {
         margin-right: 0;
-        font-size: 80px;
+        font-size: 40px;
         ;
     }
 }
 
-@media(max-width:453px) {
+@media(max-width:382px) {
     .fa.icons {
         margin-right: 0;
-        font-size: 60px;
+        margin-right: 0;
+        font-size: 25px;
         ;
     }
 }
