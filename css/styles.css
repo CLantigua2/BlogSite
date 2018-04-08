@@ -111,7 +111,7 @@ img.meImg2 {
 }
 
 .home-hero {
-    background: url('../img/terrah-holly-241981-unsplash.PNG') no-repeat;
+    background: url('../img/terrah-holly-241981-unsplash.PNG') no-repeat bottom left;
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
@@ -184,6 +184,7 @@ img.meImg2 {
     margin: 4px;
     box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
     border-radius: 100%;
+    padding-top: 14px;
     width: 75%;
     margin-bottom: 20px;
     display: block;
@@ -196,27 +197,20 @@ img.meImg2 {
 #info {
     background: #333 url('../img/michael-mroczek-440382-unsplash.PNG') no-repeat;
     background-size: cover;
-    width: cover;
-    border: 3;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
     color: #fff;
-    padding-top: 2em;
-}
-
-#info h2 {
-    font-size: 35px;
+    background-position: center;
+    overflow: hidden;
     margin: 0;
     padding-bottom: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
 }
 
-#info ul {
-    list-style: none;
-    padding: 0;
-}
-
-#info li {
-    line-height: 2em;
-    font-size: 20px;
+.backgroundBox {
+    background-color: #000;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 25px;
+    opacity: .9;
 }
 
 
@@ -231,10 +225,8 @@ img.meImg2 {
     text-align: center;
 }
 
-.bg-color {
-    border: 0;
-    margin-top: 2em;
-    margin-bottom: 2em;
+.boxShadow {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
 }
 
 
@@ -328,7 +320,8 @@ img.meImg2 {
 #separator {
     background: url("../img/photo-1510915228340-29c85a43dcfe.PNG") no-repeat center center;
     background-size: cover;
-    height: 100%;
+    height: 400px;
+    ;
     box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
 }
 
@@ -503,6 +496,23 @@ img.meImg2 {
     margin: 100px 0 100px 0;
 }
 
+.tags p {
+    color: rgba(97, 97, 97, 0.459);
+    float: right;
+    font-size: 12px;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 40px;
+}
+
+.tags ul li {
+    color: rgba(97, 97, 97, 0.459);
+    padding-right: 16px;
+    float: right;
+    font-size: 12px;
+}
+
 
 /* Footer items */
 
@@ -544,9 +554,16 @@ img.meImg2 {
 }
 
 @media(max-width:630px) {
-    .content p,
+    .content p {
+        font-size: 16px;
+        max-height: 100px;
+    }
+}
+
+@media(max-width:630px) {
     .content.open p {
         font-size: 16px;
+        max-height: 4000px;
     }
 }
 
@@ -560,7 +577,7 @@ img.meImg2 {
     img.meImg2 {
         display: block;
         max-width: 767px;
-        padding-bottom: 40px;
+        padding-bottom: 0;
     }
 }
 
@@ -621,6 +638,15 @@ img.meImg2 {
         margin-right: 0;
         margin-right: 0;
         font-size: 25px;
+    }
+}
+
+@media(max-width:633px) {
+    #separator {
+        background: url("../img/photo-1510915228340-29c85a43dcfe.PNG") no-repeat center center;
+        background-size: cover;
+        height: 200px;
         ;
+        box-shadow: 3px 4px rgba(0, 0, 0, .4);
     }
 }
